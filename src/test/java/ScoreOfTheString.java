@@ -9,7 +9,7 @@ public class ScoreOfTheString {
         char[] ch = s.toCharArray();
         int[] values = new int[ch.length];
         for(int i=0;i<ch.length;i++){
-            values[i] = (int)ch[i];
+            values[i] = ch[i];
         }
         if(values.length ==1){
             return values[0];

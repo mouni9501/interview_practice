@@ -6,11 +6,11 @@ public class FindNumbers {
     }
     public static int findNumbers(int[] nums){
         int count = 0;
-        for(int i=0;i<nums.length;i++){
-            String st = Integer.toString(nums[i]);
+        for (int num : nums) {
+            String st = Integer.toString(num);
             int length = st.length();
-            if(length%2==0){
-                count = count+1;
+            if (length % 2 == 0) {
+                count = count + 1;
             }
         }
         return count;

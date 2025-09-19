@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CanAliceWin {
     public static void main(String[] args){
@@ -10,13 +8,13 @@ public class CanAliceWin {
     public static boolean canALiceWin(int[] nums){
         int singleDigitSum = 0;
         int doubleDigitSum = 0;
-     for(int i=0;i<nums.length;i++){
-         if(nums[i]<=9){
-             singleDigitSum = singleDigitSum + nums[i];
-         }else{
-             doubleDigitSum = doubleDigitSum + nums[i];
-         }
-     }
+        for (int num : nums) {
+            if (num <= 9) {
+                singleDigitSum = singleDigitSum + num;
+            } else {
+                doubleDigitSum = doubleDigitSum + num;
+            }
+        }
      boolean bool = true;
      if(singleDigitSum == doubleDigitSum){
          bool = false;

@@ -19,9 +19,9 @@ public class IsSubStringPresent {
             subStrings[i] = subString;
         }
 
-        for(int i=0;i<reversedSubStrings.length;i++){
-            for(int j=0;j<subStrings.length;j++){
-                if(reversedSubStrings[i].equals(subStrings[j])){
+        for (String reversedSubString : reversedSubStrings) {
+            for (String subString : subStrings) {
+                if (reversedSubString.equals(subString)) {
                     bool = true;
                     break;
                 }

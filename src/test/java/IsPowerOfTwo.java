@@ -5,7 +5,6 @@ public class IsPowerOfTwo {
         System.out.println(result);
     }
     public static boolean isPowerOfTwo(int n){
-        boolean bool;
        if(n<=0)
            return false;
        if(n==1)

@@ -10,13 +10,13 @@ public class CountValidWords {
         for(String word:words){
             char[] ch = word.toCharArray();
             boolean valid = true;
-            for(int i=0;i<ch.length;i++){
-                if(!Character.isLetter(ch[i])){
+            for (char c : ch) {
+                if (!Character.isLetter(c)) {
                     valid = false;
                     break;
                 }
             }
-            if(valid==true && ch.length>0){
+            if(valid && ch.length>0){
                 count++;
             }
         }

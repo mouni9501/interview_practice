@@ -8,8 +8,8 @@ public class ReverseStringsInSentenceByModifyingInitialLetters {
     public static String reverseString(String str){
         StringBuilder sb = new StringBuilder();
         String[] st = str.split(" ");
-        for(int i=0;i<st.length;i++){
-            String s = reverse(st[i]);
+        for (String string : st) {
+            String s = reverse(string);
             sb.append(s).append(" ");
         }
         return sb.toString().trim();
