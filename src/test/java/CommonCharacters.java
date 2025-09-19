@@ -3,21 +3,20 @@ import java.util.ArrayList;
 public class CommonCharacters {
     public static void main(String[] args){
         String[]  s = {"bella","label","roller"};
-        ArrayList<Character> al = commonCharacters(s);
-        System.out.println(al);
+
 
     }
-    public static ArrayList<Character> commonCharacters(String[] s){
+    public static void commonCharacters(String[] s){
+        String st = s[0];
         char[] ch = s[0].toCharArray();
-        ArrayList<Character> al = new ArrayList<>();
-        for(int i=0;i<ch.length;i++){
-            char c = ch[i];
-            for(int j=1;j<s.length;j++){
-                if(i>=j && c==s[j].charAt(i)){
-                   al.add(c);
+        for(int i=1;i<s.length;i++){
+            char[] c = s[i].toCharArray();
+            for(int j =0;j<ch.length;j++){
+                if(ch[j] == c[j]){
+
                 }
             }
         }
-        return al;
+
     }
 }
